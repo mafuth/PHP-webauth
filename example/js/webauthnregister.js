@@ -1,35 +1,3 @@
-/*
-
-This is key registration part of the client (browser) side of webauthn
-authentication.
-
-This really does little more than fetch the info from the physical key
-or fingerprint reader etc, and repackage it in a palatable form for
-sending to the server.
-
-When registering a user account, or allowing them to add a key in their profile,
-or whatever, request a challenge from $webauthn->challenge() (e.g. using Ajax)
-and pass the resulting key string to
-  webauthnRegister(key, callback)
-where key is the contents of the hidden field (or however else you stored
-the challenge string).
-
-The function will ask the browser to identify their key or touch fingerprint
-or whatever.
-
-On completion it will call the callback function callback:
-  function callback(success, info)
-success is a boolean, true for successful acquisition of info from the key,
-in which case pass the info back to the server, call $webauth->register to
-validate it, and put the resulting string back in the user record for use
-in future logins.
-
-If success is false, then either info is the string 'abort', meaning the
-user failed to complete the process, or an error message of whatever else
-went wrong.
-
-*/
-
 function webauthnRegister(key, callback){
 	key = JSON.parse(key);
 	key.publicKey.attestation = undefined;

@@ -1,0 +1,10 @@
+{
+    "name": "biometric/webauth",
+    "description": "web based biometric auth for php",
+    "type": "library",
+    "require": {
+        "2tvenom/cborencode": "^1.0"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable"
+}
