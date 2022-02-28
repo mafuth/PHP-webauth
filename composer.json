@@ -1,6 +1,6 @@
 {
-    "name": "mafuth/ooredoo-sms-gateway-php",
-    "description": "Simple bulk SMS sender for OOREDOO",
+    "name": "biometric/webauth",
+    "description": "Simple php biometrics auth library",
     "type": "library",
     "minimum-stability": "stable",
     "license": "MIT",
