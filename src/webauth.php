@@ -1,6 +1,6 @@
 <?php
 
-namespace mafuth\biomatric;
+namespace biomatric;
 
 use phpseclib\Crypt\RSA;
 use phpseclib\Math\BigInteger;

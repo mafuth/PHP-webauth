@@ -1,10 +1,19 @@
 {
-    "name": "biometric/webauth",
-    "description": "web based biometric auth for php",
+    "name": "mafuth/ooredoo-sms-gateway-php",
+    "description": "Simple bulk SMS sender for OOREDOO",
     "type": "library",
-    "require": {
-        "2tvenom/cborencode": "^1.0"
-    },
+    "minimum-stability": "stable",
     "license": "MIT",
-    "minimum-stability": "stable"
+    "authors": [
+        {
+            "name": "mafuth",
+            "email": "mafaaz708@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "biomatric\\": "src/"
+        }
+    },
+    "require": {}
 }
